@@ -57,8 +57,8 @@ do
     # --------------------------------------------------------------------------
     # 1-1. Merge Split FASTQ Files (Merging L001 and L002)
     echo "[Step 1-1] Merging FASTQ files for ${sid}..."
-    cat ${FASTQ_DIR}/RS-*-${sid}-*L001_R1_001.fastq.gz ${FASTQ_DIR}/RS-*-${sid}-*L002_R1_001.fastq.gz > ${FASTQ_DIR}/${sid}_R1.fastq.gz
-    cat ${FASTQ_DIR}/RS-*-${sid}-*L001_R2_001.fastq.gz ${FASTQ_DIR}/RS-*-${sid}-*L002_R2_001.fastq.gz > ${FASTQ_DIR}/${sid}_R2.fastq.gz
+    cat ${FASTQ_DIR}/RS-*-${sid}_*L001_R1_001.fastq.gz ${FASTQ_DIR}/RS-*-${sid}_*L002_R1_001.fastq.gz > ${FASTQ_DIR}/${sid}_R1.fastq.gz
+    cat ${FASTQ_DIR}/RS-*-${sid}_*L001_R2_001.fastq.gz ${FASTQ_DIR}/RS-*-${sid}_*L002_R2_001.fastq.gz > ${FASTQ_DIR}/${sid}_R2.fastq.gz
 
     # 1-2. Quality Control & Trimming (fastp)
     echo "[Step 1-2] Running fastp (QC & Trimming)..."
