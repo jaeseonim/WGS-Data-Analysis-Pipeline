@@ -219,7 +219,7 @@ do
     -I ${sid}.sorted.bam \
     -O ${sid}.dedup.bam \
     -M ${sid}.markdup.metrics.txt \
-    --TMP_DIR ./tmp \
+    --TMP_DIR /scratch/username \
 
   samtools index ${sid}.dedup.bam
   
